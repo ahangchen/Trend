@@ -13,4 +13,7 @@
     <string name="communicate">交流</string>
     <string name="share">分享</string>
     <string name="send">发送</string>
+    <string name="github">Github</string>
+    <string name="arxiv">Arxiv</string>
+    <string name="notes">笔记</string>
 </resources>
