@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <item android:title="@string/my">
         <item
             android:id="@+id/nav_favour"
             android:icon="@drawable/ic_favorite_white_24dp"
-            android:title="@string/my_collect"/>
+            android:title="@string/favour"/>
         <item
             android:id="@+id/nav_setting"
             android:icon="@drawable/ic_settings_black_24dp"
             android:title="@string/setting"/>
-        <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/ic_whatshot_black_24dp"
-            android:title="@string/about"/>
-    </group>
+    </item>
 
     <item android:title="@string/communicate">
         <menu>
@@ -26,6 +22,14 @@
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/ic_chat_black_24dp"
                 android:title="@string/feedback"/>
+        </menu>
+    </item>
+    <item android:title="@string/about">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_whatshot_black_24dp"
+                android:title="@string/app_name"/>
         </menu>
     </item>
 

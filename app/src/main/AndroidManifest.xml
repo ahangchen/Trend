@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".hot.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,27 +19,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SettingsActivity"
+            android:name=".setting.SettingsActivity"
             android:label="@string/title_activity_settings">
         </activity>
         <activity
-            android:name=".NoteDetailActivity"
+            android:name=".idea.IdeaDetailActivity"
             android:label="@string/title_activity_note_detail"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".FavourActivity"
+            android:name=".hot.FavourActivity"
             android:label="@string/title_activity_favour"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".AboutActivity"
+            android:name=".about.AboutActivity"
             android:label="@string/title_activity_about"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".ComposeNoteActivity">
+        <activity android:name=".idea.ComposeIdeaActivity">
         </activity>
-        <activity android:name=".FeedbackActivity">
+        <activity android:name=".about.FeedbackActivity">
         </activity>
     </application>
 

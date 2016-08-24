@@ -5,9 +5,9 @@
     <string name="navigation_drawer_close">关闭菜单</string>
 
     <string name="action_settings">设置</string>
-    <string name="action_note">写想法</string>
-
-    <string name="my_collect">收藏</string>
+    <string name="action_compose_idea">写想法</string>
+    <string name="my">我的</string>
+    <string name="favour">收藏</string>
     <string name="setting">设置</string>
     <string name="about">关于</string>
     <string name="communicate">交流</string>
@@ -16,4 +16,14 @@
     <string name="github">Github</string>
     <string name="arxiv">Arxiv</string>
     <string name="ideas">想法</string>
+
+    <string name="ok">确定</string>
+    <string name="abort">取消</string>
+    <string name="quit_title">确认退出</string>
+    <string name="compose_quit_text">您有未保存的内容，确认要退出吗？</string>
+
+    <string name="about_trend">
+        "立于浪潮之巅，记录点滴思维火花。\n"
+        "君子藏器于身，待时而动。\n"
+    </string>
 </resources>
