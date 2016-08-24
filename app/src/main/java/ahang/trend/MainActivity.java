@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ahang.trend.adapter.ViewPagerAdapter;
+import ahang.trend.util.ActivityUtil;
 
 public class MainActivity extends AppCompatActivity
 		implements NavigationView.OnNavigationItemSelectedListener,
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity
 		ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 		adapter.addFragment(GithubTrendFragment.newInstance(), getString(R.string.github));
 		adapter.addFragment(ArxivFragment.newInstance(), getString(R.string.arxiv));
-		adapter.addFragment(NotesFragment.newInstance(), getString(R.string.notes));
+		adapter.addFragment(NotesFragment.newInstance(), getString(R.string.ideas));
 		viewPager.setAdapter(adapter);
 	}
 	private void initTabs() {
@@ -92,7 +93,8 @@ public class MainActivity extends AppCompatActivity
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
-			case R.id.action_settings:
+			case R.id.action_note:
+				ActivityUtil.to(MainActivity.this, ComposeNoteActivity.class);
 				return true;
 		}
 		return super.onOptionsItemSelected(item);
@@ -103,15 +105,20 @@ public class MainActivity extends AppCompatActivity
 	public boolean onNavigationItemSelected(MenuItem item) {
 		// Handle navigation view item clicks here.
 		switch (item.getItemId()) {
-			case R.id.nav_camera:
+			case R.id.nav_favour:
+				ActivityUtil.to(MainActivity.this, FavourActivity.class);
 				break;
-			case R.id.nav_gallery:
+			case R.id.nav_setting:
+				ActivityUtil.to(MainActivity.this, SettingsActivity.class);
 				break;
-			case R.id.nav_slideshow:
+			case R.id.nav_about:
+				ActivityUtil.to(MainActivity.this, AboutActivity.class);
 				break;
 			case R.id.nav_share:
+
 				break;
-			case R.id.nav_send:
+			case R.id.nav_feedback:
+				ActivityUtil.to(MainActivity.this, FeedbackActivity.class);
 				break;
 		}
 		drawer.closeDrawer(GravityCompat.START);
