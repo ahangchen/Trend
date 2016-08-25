@@ -20,8 +20,8 @@ import ahang.trend.about.FeedbackActivity;
 import ahang.trend.adapter.ViewPagerAdapter;
 import ahang.trend.idea.ComposeIdeaActivity;
 import ahang.trend.idea.IdeasFragment;
-import ahang.trend.setting.SettingsActivity;
-import ahang.trend.util.ActivityUtil;
+import ahang.trend.setting.SettingActivity;
+import ahang.trd.util.ActivityUtil;
 
 public class MainActivity extends AppCompatActivity
 		implements NavigationView.OnNavigationItemSelectedListener,
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity
 				ActivityUtil.to(MainActivity.this, FavourActivity.class);
 				break;
 			case R.id.nav_setting:
-				ActivityUtil.to(MainActivity.this, SettingsActivity.class);
+				ActivityUtil.to(MainActivity.this, SettingActivity.class);
 				break;
 			case R.id.nav_about:
 				ActivityUtil.to(MainActivity.this, AboutActivity.class);

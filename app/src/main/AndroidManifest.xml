@@ -41,6 +41,8 @@
         </activity>
         <activity android:name=".about.FeedbackActivity">
         </activity>
+        <activity android:name=".setting.SettingActivity">
+        </activity>
     </application>
 
 </manifest>

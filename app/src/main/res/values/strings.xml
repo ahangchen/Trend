@@ -27,6 +27,45 @@
 
     <!-- Strings related to Settings -->
 
+
+    <!-- preferences -->
+    <string name="pref_category_reading">Reading</string>
+    <string name="pref_category_search">Search</string>
+    <string name="pref_external">pref_external</string>
+    <string name="pref_external_title">Use external browser</string>
+    <string name="pref_external_summary">Read articles in external browser</string>
+    <string name="pref_color_code">pref_color_code</string>
+    <string name="pref_color_code_title">Color code comments</string>
+    <string name="pref_color_code_summary">Apply visual indicator to comments</string>
+    <string name="pref_highlight_updated">pref_highlight_updated</string>
+    <string name="pref_highlight_updated_title">Highlight updated stories</string>
+    <string name="pref_highlight_updated_summary">Show changes from last refresh</string>
+    <string name="pref_custom_tab">pref_custom_tab</string>
+    <string name="pref_custom_tab_title">Use custom Chrome tab (beta)</string>
+    <string name="pref_custom_tab_summary">Open Chrome tab instead of browser</string>
+    <string name="pref_item_click">pref_item_click</string> <!-- deprecated -->
+    <string name="pref_story_display">pref_story_display</string>
+    <string name="pref_story_display_title">Default story display</string>
+    <string name="pref_dark_theme">pref_dark_theme</string> <!-- deprecated -->
+    <string name="pref_theme">pref_theme</string>
+    <string name="pref_theme_title">Theme</string>
+    <string name="pref_item_search_recent">pref_item_search_recent</string> <!-- deprecated -->
+    <string name="pref_search_sort">pref_search_sort</string>
+    <string name="pref_search_sort_title">Sort by</string>
+    <string name="pref_text_size">pref_text_size</string>
+    <string name="pref_text_size_title">Font size</string>
+    <string name="pref_comment_display">pref_comment_display</string>
+    <string name="pref_comment_display_title">Comments and replies</string>
+    <string name="pref_popular_range">pref_popular_range</string>
+    <string name="pref_highlight_updated_help">pref_highlight_updated_help</string>
+
+    <string name="text_size_extra_small">Extra small</string>
+    <string name="text_size_small">Small</string>
+    <string name="text_size_medium">Medium</string>
+    <string name="text_size_large">Large</string>
+    <string name="text_size_extra_large">Extra large</string>
+
+
     <!-- Example General settings -->
     <string name="pref_header_general">General</string>
 

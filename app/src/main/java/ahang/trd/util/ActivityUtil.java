@@ -1,4 +1,4 @@
-package ahang.trend.util;
+package ahang.trd.util;
 
 import android.app.Activity;
 import android.content.Context;

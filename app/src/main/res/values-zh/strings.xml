@@ -23,7 +23,9 @@
     <string name="compose_quit_text">您有未保存的内容，确认要退出吗？</string>
 
     <string name="about_trend">
-        "立于浪潮之巅，记录点滴思维火花。\n"
-        "君子藏器于身，待时而动。\n"
+        "立于浪潮之巅，记录点滴思维火花.\n"
+    </string>
+    <string name="slogan">
+        "君子藏器于身，待时而动。"
     </string>
 </resources>
