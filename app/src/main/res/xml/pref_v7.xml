@@ -44,12 +44,12 @@
             android:icon="@drawable/ic_code_black_24px"
             android:defaultValue="true"
             android:key="focus_github"
-            android:title="@string/pref_focus_github"/>
+            android:title="@string/github"/>
         <android.support.v7.preference.SwitchPreferenceCompat
             android:icon="@drawable/ic_description_black_24dp"
             android:defaultValue="true"
             android:key="focus_arxiv"
-            android:title="@string/pref_focus_arxiv"/>
+            android:title="@string/arxiv"/>
     </android.support.v7.preference.PreferenceCategory>
     <!--todo pref for note-->
     <android.support.v7.preference.PreferenceCategory

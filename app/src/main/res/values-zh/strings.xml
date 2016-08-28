@@ -22,6 +22,17 @@
     <string name="quit_title">确认退出</string>
     <string name="compose_quit_text">您有未保存的内容，确认要退出吗？</string>
 
+    <string name="pref_header_general">我的</string>
+    <string name="pref_user_name">名字</string>
+    <string name="pref_user_email">邮箱</string>
+
+    <string name="pref_header_focus">关注</string>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">数据与同步</string>
+    <string name="pref_auto_sync">自动同步</string>
+    <string name="pref_title_sync_frequency">同步频率</string>
+
     <string name="about_trend">
         "立于浪潮之巅，记录点滴思维火花.\n"
     </string>
