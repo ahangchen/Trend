@@ -7,6 +7,9 @@
     <WebView
         android:id="@+id/wv_github"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_marginTop="2dp"
+        android:layout_height="match_parent"
+        />
+    <include android:id="@+id/github_loading"
+        layout="@layout/include_loading"/>
 </FrameLayout>
