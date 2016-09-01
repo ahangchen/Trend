@@ -15,7 +15,7 @@
             android:defaultValue="@string/pref_default_user_name"
             android:summary="@string/pref_default_user_name"
             android:inputType="textCapWords"
-            android:key="user_name"
+            android:key="@string/pref_user_name_key"
             android:maxLines="1"
             android:selectAllOnFocus="true"
             android:singleLine="true"
@@ -30,7 +30,7 @@
             android:defaultValue="@string/pref_default_user_email"
             android:summary="@string/pref_default_user_email"
             android:inputType="textCapWords"
-            android:key="user_email"
+            android:key="@string/pref_user_email_key"
             android:maxLines="1"
             android:selectAllOnFocus="true"
             android:singleLine="true"
@@ -43,23 +43,23 @@
         <android.support.v7.preference.SwitchPreferenceCompat
             android:icon="@drawable/ic_code_black_24px"
             android:defaultValue="true"
-            android:key="focus_github"
+            android:key="@string/pref_focus_github_key"
             android:title="@string/github"/>
         <android.support.v7.preference.SwitchPreferenceCompat
             android:icon="@drawable/ic_description_black_24dp"
             android:defaultValue="true"
-            android:key="focus_arxiv"
+            android:key="@string/pref_focus_arxiv_key"
             android:title="@string/arxiv"/>
     </android.support.v7.preference.PreferenceCategory>
     <!--todo pref for note-->
     <android.support.v7.preference.PreferenceCategory
-        android:key="pref_data_sync"
+        android:key="@string/pref_data_sync_key"
         android:title="@string/pref_header_data_sync"
         android:persistent="false">
         <android.support.v7.preference.SwitchPreferenceCompat
             android:icon="@drawable/ic_sync_black_24dp"
             android:defaultValue="true"
-            android:key="auto_sync"
+            android:key="@string/pref_auto_sync_key"
             android:title="@string/pref_auto_sync"/>
         <android.support.v7.preference.ListPreference
             android:icon="@drawable/ic_alarm_black_24dp"
@@ -67,7 +67,7 @@
             android:defaultValue="180"
             android:entries="@array/pref_sync_frequency_titles"
             android:entryValues="@array/pref_sync_frequency_values"
-            android:key="sync_frequency"
+            android:key="@string/pref_sync_frequency_key"
             android:negativeButtonText="@null"
             android:positiveButtonText="@null"
             android:title="@string/pref_title_sync_frequency"/>

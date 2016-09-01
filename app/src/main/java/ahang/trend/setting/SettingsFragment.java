@@ -4,7 +4,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.preference.PreferenceFragmentCompat;
-import android.support.v7.preference.SwitchPreferenceCompat;
 
 import ahang.trend.R;
 
@@ -51,4 +50,5 @@ public class SettingsFragment extends PreferenceFragmentCompat {
 		getPreferenceManager().getSharedPreferences().unregisterOnSharedPreferenceChangeListener(mListener);
 		super.onPause();
 	}
+
 }

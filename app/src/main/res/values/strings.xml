@@ -25,6 +25,14 @@
     <string name="quit_title">Confirm Quit</string>
     <string name="compose_quit_text">Do you want to quit without saving the content?</string>
 
+    <string name="pref_user_name_key">user_name</string>
+    <string name="pref_user_email_key">user_email</string>
+    <string name="pref_focus_github_key">focus_github</string>
+    <string name="pref_focus_arxiv_key">focus_arxiv</string>
+    <string name="pref_data_sync_key">data_sync</string>
+    <string name="pref_auto_sync_key">auto_sync</string>
+    <string name="pref_sync_frequency_key">sync_frequency</string>
+
     <string name="pref_header_general">General</string>
     <string name="pref_user_name">User name</string>
     <string name="pref_default_user_name">No name</string>

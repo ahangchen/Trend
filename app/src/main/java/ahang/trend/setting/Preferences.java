@@ -1,5 +1,6 @@
 package ahang.trend.setting;
 
+import android.support.v7.preference.EditTextPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceManager;
@@ -20,6 +21,9 @@ public class Preferences {
 		if (pref instanceof ListPreference) {
 			ListPreference listPref = (ListPreference) pref;
 			pref.setSummary(listPref.getEntry());
+		} else if (pref instanceof EditTextPreference) {
+			EditTextPreference editPref = (EditTextPreference) pref;
+			pref.setSummary(editPref.getText());
 		}
 	}
 

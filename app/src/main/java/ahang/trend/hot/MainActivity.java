@@ -1,5 +1,6 @@
 package ahang.trend.hot;
 
+import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,9 +11,12 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
+
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import ahang.trend.R;
 import ahang.trend.about.AboutActivity;
@@ -25,9 +29,7 @@ import ahang.trd.util.ActivityUtil;
 
 public class MainActivity extends AppCompatActivity
 		implements NavigationView.OnNavigationItemSelectedListener,
-		GithubTrendFragment.OnFragmentInteractionListener,
-		ArxivFragment.OnFragmentInteractionListener,
-		IdeasFragment.OnFragmentInteractionListener {
+		BaseFragment.OnFragmentInteractionListener {
 	private Toolbar toolbar;
 	private DrawerLayout drawer;
 	private NavigationView navigationView;
@@ -42,11 +44,21 @@ public class MainActivity extends AppCompatActivity
 		adapter.addFragment(IdeasFragment.newInstance(), getString(R.string.ideas));
 		viewPager.setAdapter(adapter);
 	}
+
 	private void initTabs() {
 		tabLayout = (TabLayout) findViewById(R.id.tabs);
 		assert tabLayout != null;
 		tabLayout.setupWithViewPager(viewPager);
 	}
+
+	private void initData() {
+		SharedPreferences sps = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+		String userName = sps.getString(getString(R.string.pref_user_name_key), getString(R.string.pref_default_user_name));
+		String userEmail = sps.getString(getString(R.string.pref_user_email_key), getString(R.string.pref_default_user_email));
+		((TextView)navigationView.getHeaderView(0).findViewById(R.id.nav_header_user_name)).setText(userName);
+		((TextView)navigationView.getHeaderView(0).findViewById(R.id.nav_header_user_email)).setText(userEmail);
+	}
+
 	private void init() {
 		toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);
@@ -78,11 +90,19 @@ public class MainActivity extends AppCompatActivity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		init();
+		// ATTENTION: This was auto-generated to implement the App Indexing API.
+		// See https://g.co/AppIndexing/AndroidStudio for more information.
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		initData();
 	}
 
 	@Override
 	public void onBackPressed() {
-		 if(!closeDrawer()) {
+		if (!closeDrawer()) {
 			super.onBackPressed();
 		}
 	}
@@ -136,4 +156,5 @@ public class MainActivity extends AppCompatActivity
 	public void onFragmentInteraction(Uri uri) {
 
 	}
+
 }
