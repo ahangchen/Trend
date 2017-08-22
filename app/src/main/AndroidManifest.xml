@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+            <!--android:theme="@style/Theme.AppCompat"-->
         <activity
-            android:name=".setting.SettingsActivity"
+            android:name=".setting.SettingActivity"
+            android:theme="@style/AppTheme.SettingsTheme"
             android:label="@string/title_activity_settings">
         </activity>
         <activity
@@ -41,9 +43,6 @@
         </activity>
         <activity android:name=".about.FeedbackActivity">
         </activity>
-        <activity android:name=".setting.SettingActivity">
-        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version"/>
