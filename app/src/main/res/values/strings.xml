@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">Trend</string>
+    <string name="app_name">For you</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
     <string name="action_compose_idea">Idea</string>
+    <string name="input_promot">Click + to input text</string>
     <string name="my">My</string>
     <string name="favour">Favourite</string>
     <string name="setting">Setting</string>
@@ -14,11 +15,13 @@
     <string name="share">Share</string>
     <string name="feedback">Feedback</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="github">Github</string>
-    <string name="arxiv">Arxiv</string>
+    <string name="hello_blank_fragment">Developing</string>
+    <string name="github">Urgent</string>
+    <string name="arxiv">cweihang</string>
     <string name="ideas">Ideas</string>
     <string name="title_activity_settings">Settings</string>
+
+    <string name="urgent_btn">Urgent Press</string>
 
     <string name="ok">OK</string>
     <string name="abort">NO</string>
@@ -36,9 +39,9 @@
 
     <string name="pref_header_general">General</string>
     <string name="pref_user_name">User name</string>
-    <string name="pref_default_user_name">No name</string>
+    <string name="pref_default_user_name">cweihang</string>
     <string name="pref_user_email">User email</string>
-    <string name="pref_default_user_email">example@example.com</string>
+    <string name="pref_default_user_email">cweihang.cn</string>
 
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Data &amp; sync</string>
@@ -62,6 +65,12 @@
         <item>-1</item>
     </string-array>
 
+    <string name="pref_urgent_phone">Urgent tel</string>
+    <string name="pref_default_urgent_phone">13660106752</string>
+    <string name="pref_urgent_msg">Urgent msg</string>
+    <string name="pref_default_urgent_msg">13660106752</string>
+    <string name="pref_urgent_gps">Report gps</string>
+
     <!-- Example settings for Notifications -->
     <string name="pref_header_focus">Focus</string>
 
@@ -72,6 +81,9 @@
         "Read it now, note your idea!\n"
         "The world will be inspired by you!\n"
     </string>
-    <string name="title_activity_favour">FavourActivity</string>
+    <string name="slogan">
+        "Thinking of you."
+    </string>
+    <string name="title_activity_favour">Favour</string>
     <string name="title_activity_about">AboutActivity</string>
 </resources>

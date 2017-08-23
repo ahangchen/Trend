@@ -8,6 +8,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:textSize="@dimen/full_screen_promot"
+        android:id="@+id/idea"
+        android:padding="@dimen/edit_text_padding"
         android:text="@string/hello_blank_fragment"/>
 
 </FrameLayout>

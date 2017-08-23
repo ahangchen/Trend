@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="ahang.trend"
           xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_fan"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name="ahang.Foryou"
         android:theme="@style/AppTheme">
         <activity
             android:name=".hot.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -21,7 +36,7 @@
             <!--android:theme="@style/Theme.AppCompat"-->
         <activity
             android:name=".setting.SettingActivity"
-            android:theme="@style/AppTheme.SettingsTheme"
+            android:theme="@style/BarTheme"
             android:label="@string/title_activity_settings">
         </activity>
         <activity
@@ -37,11 +52,13 @@
         <activity
             android:name=".about.AboutActivity"
             android:label="@string/title_activity_about"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
         </activity>
-        <activity android:name=".idea.ComposeIdeaActivity">
+        <activity android:name=".idea.ComposeIdeaActivity"
+            android:theme="@style/BarTheme">
         </activity>
-        <activity android:name=".about.FeedbackActivity">
+        <activity android:name=".about.FeedbackActivity"
+            android:theme="@style/BarTheme">
         </activity>
         <meta-data
             android:name="com.google.android.gms.version"

@@ -12,5 +12,10 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".hot.FavourActivity"
     tools:showIn="@layout/activity_favour">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="@dimen/full_screen_promot"
+        android:text="@string/hello_blank_fragment"/>
 </RelativeLayout>

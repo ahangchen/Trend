@@ -45,7 +45,7 @@ public abstract class ComposeActivity extends AppCompatActivity {
 			case R.id.compose_ok:
 				// save and finish
 				save();
-				onBackPressed();
+				super.onBackPressed();
 				return true;
 			case android.R.id.home:
 				onBackPressed();

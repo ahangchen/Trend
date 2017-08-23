@@ -43,7 +43,7 @@ public class ArxivFragment extends BaseFragment {
 
 	@Override
 	protected void bind() {
-		webView.loadUrl("http://arxiv.org/list/cs.NE/recent");
+		webView.loadUrl("http://cweihang.cn:8084");
 	}
 
 	@Override

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5DAC81</color>
-    <color name="colorPrimaryDark">#1B813E</color>
-    <color name="colorAccent">#FC9F4D</color>
+    <color name="colorPrimary">#ED784A</color>
+    <color name="colorPrimaryDark">#F75C2F</color>
+    <!--<color name="colorAccent">#5DAC81</color>-->
+    <color name="colorAccent">#E16B8C</color>
+    <color name="colorAccentOps">#5DAC81</color>
     <color name="colorControlNormal">@android:color/white</color>
 
     <!-- color-coded levels -->

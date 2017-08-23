@@ -1,15 +1,35 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+    android:background="@drawable/urgent_bg"
              tools:context=".hot.GithubTrendFragment">
 
-    <WebView
-        android:id="@+id/wv_github"
-        android:layout_width="match_parent"
-        android:layout_marginTop="2dp"
-        android:layout_height="match_parent"
-        />
-    <include android:id="@+id/github_loading"
-        layout="@layout/include_loading"/>
-</FrameLayout>
+    <!--<WebView-->
+        <!--android:id="@+id/wv_github"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+    <!--<include android:id="@+id/github_loading"-->
+        <!--layout="@layout/include_loading"/>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/urgent_button"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-200dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/urgent_btn"
+            android:layout_marginTop="100dp"
+            android:textSize="@dimen/full_screen_promot"
+            android:textColor="@color/colorControlNormal"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

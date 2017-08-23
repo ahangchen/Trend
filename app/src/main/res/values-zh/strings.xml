@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">逐鹿</string>
+    <string name="app_name">For you</string>
 
     <string name="navigation_drawer_open">打开菜单</string>
     <string name="navigation_drawer_close">关闭菜单</string>
 
     <string name="action_settings">设置</string>
     <string name="action_compose_idea">写想法</string>
+    <string name="input_promot">点击右上角加号写想法</string>
     <string name="my">我的</string>
     <string name="favour">收藏</string>
     <string name="setting">设置</string>
@@ -13,9 +14,16 @@
     <string name="communicate">交流</string>
     <string name="share">分享</string>
     <string name="feedback">反馈</string>
-    <string name="github">Github</string>
-    <string name="arxiv">Arxiv</string>
+    <string name="github">急急急</string>
+    <string name="arxiv">梦里茶</string>
     <string name="ideas">想法</string>
+
+    <string name="urgent_btn">按这里！</string>
+    <string name="title_activity_favour">收藏</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_note_detail">NoteDetailActivity</string>
+
+    <string name="hello_blank_fragment">努力开发中(⊙o⊙)</string>
 
     <string name="ok">确定</string>
     <string name="abort">取消</string>
@@ -26,17 +34,134 @@
     <string name="pref_user_name">名字</string>
     <string name="pref_user_email">邮箱</string>
 
-    <string name="pref_header_focus">关注</string>
+    <string name="pref_header_focus">主页展示</string>
 
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">数据与同步</string>
     <string name="pref_auto_sync">自动同步</string>
     <string name="pref_title_sync_frequency">同步频率</string>
 
+    <string name="pref_urgent_phone">打电话到这里</string>
+    <string name="pref_urgent_msg">发短信到这里</string>
+    <string name="pref_urgent_gps">报告GPS</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="loading">Loading</string>
+
+    <string name="pref_user_name_key">user_name</string>
+    <string name="pref_user_email_key">user_email</string>
+    <string name="pref_focus_github_key">focus_github</string>
+    <string name="pref_focus_arxiv_key">focus_arxiv</string>
+    <string name="pref_data_sync_key">data_sync</string>
+    <string name="pref_auto_sync_key">auto_sync</string>
+    <string name="pref_sync_frequency_key">sync_frequency</string>
+
+    <string name="pref_default_user_name">cweihang</string>
+    <string name="pref_default_user_email">cweihang.cn</string>
+    <string name="pref_default_urgent_phone">13660106752</string>
+    <string name="pref_default_urgent_msg">13660106752</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
     <string name="about_trend">
-        "立于浪潮之巅，记录点滴思维火花.\n"
+    "5月24日\n
+        牵着手的你好害羞\n
+        你说：\n
+        我跟你说啊，要对我好一点\n
+        你如果对我不好，我就会以为你不喜欢我\n
+        就会不开心，就会默默地走掉。\n
+        (那样我会很心疼的啊，不知所措）\n\n
+5月25日\n
+        你说会打乒乓球，不太会打羽毛球\n
+        小时候吃口香糖还会吞到肚子里（好笨\n\n
+5月28日\n
+        去红专厂\n
+        蓝色长裙黑色长发的你很美\n
+        第一次主动牵了我的手\n
+        喜欢那个下午和你一起看过的世界\n
+        喜欢从镜子里看你和我，你的眼睛，你的脸颊；\n
+        深切地依赖与联系，了解，亲近\n
+        想要尽自己最大的努力去爱你。\n\n
+5月30日\n
+        端午节\n
+        饭后在穗石码头看两三只龙舟在划。\n
+        什么时候我们也去找条小船来划吧\n
+        与君泛舟湖心，不闻尘世\n\n
+6月1日\n
+        我们自己的聊天背景\n\n
+6月2日\n
+        情侣相册(⊙o⊙)\n\n
+6月7日\n
+        航：我撑着伞的时候，你是不是应该挽着我啊\n
+        然：应该是吧\n
+        航：那你为啥不挽着我\n
+        然：只是应该啊\n
+        ……\n
+        然：是不是这样挽着，我不会\n
+        \n
+        烩聚时光\n
+        航： 你看芒果布丁\n
+        然：？\n
+        航： 要不要喂饭\n
+        然： 要\n
+        勺子递过去张开嘴\n\n
+6月5日\n
+        走到正门的石头边\n
+        “这里有条小路你知道不？”\n
+        牵着你走上去\n
+        抱在怀里，亲了你的脸\n
+        你把头靠在我身上，感觉那么温暖那么依恋\n
+        晚上，梦见你戴着我给你的吊坠\n\n
+6月16日\n
+        广美毕业展，第二次约会?\n
+        不像第一次那样拘束\n
+        牵着手，亲吻也很自然\n
+        一起吃鹌鹑蛋（人间美味）\n
+        很傻很开心\n
+        新的爪机派上用场了\n
+        什么时候能把你说给我的爸爸妈妈听呢\n\n
+7月2日\n
+        三楼的走廊\n
+        夏目的BGM\n
+        蓝蓝的天白白的云\n
+        慵懒地站着\n
+        忽然想要吻上去\n
+        咸咸的软软的\n\n
+7月3日\n
+        第二次接吻是在穗石往B3的路上\n
+        笨笨的，还不学。\n\n
+暑假\n
+        实习\n
+        单车后座的你\n
+        下巴磕在背上痒痒的\n
+        车技越来越好了呢\n\n
+回家啦\n
+        跟爹妈说你的事情\n
+        妈妈说你们那彩礼好贵呀，还拿百度上的东西给我看\n
+        一副不开心的样子\n
+        "要多少彩礼就去赚多少，哼"\n\n
+写着这个app\n
+        忽然觉得好像老夫老妻了呢\n\n
+        \n\n\n
+        "
     </string>
     <string name="slogan">
-        "君子藏器于身，待时而动。"
+        "一生不曾温柔，徒为你这么勇。"
     </string>
 </resources>

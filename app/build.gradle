@@ -26,5 +26,6 @@ dependencies {
     compile 'com.android.support:design:26.+'
     compile 'com.android.support:support-v4:26.+'
     compile 'com.android.support:preference-v7:26.+'
+    compile 'com.tencent.bugly:crashreport:latest.release'
     compile 'com.google.android.gms:play-services-appindexing:9.8.0'
 }

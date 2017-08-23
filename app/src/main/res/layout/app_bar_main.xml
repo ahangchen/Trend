@@ -23,6 +23,8 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:tabIndicatorHeight="@dimen/tab_indicate_height"
+            app:tabIndicatorColor="@color/colorControlNormal"
             app:tabMode="fixed"
             app:tabGravity="fill"/>
     </android.support.design.widget.AppBarLayout>
@@ -34,4 +36,13 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
 
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--android:tint="@color/colorControlNormal"-->
+        <!--android:src="@drawable/ic_whatshot_black_48dp"/>-->
 </android.support.design.widget.CoordinatorLayout>

@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.design.widget.NavigationView;
@@ -38,11 +39,6 @@ public class MainActivity extends AppCompatActivity
 
 	private void initViewPager() {
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
-		ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-		adapter.addFragment(GithubTrendFragment.newInstance(), getString(R.string.github));
-		adapter.addFragment(ArxivFragment.newInstance(), getString(R.string.arxiv));
-		adapter.addFragment(IdeasFragment.newInstance(), getString(R.string.ideas));
-		viewPager.setAdapter(adapter);
 	}
 
 	private void initTabs() {
@@ -57,6 +53,17 @@ public class MainActivity extends AppCompatActivity
 		String userEmail = sps.getString(getString(R.string.pref_user_email_key), getString(R.string.pref_default_user_email));
 		((TextView)navigationView.getHeaderView(0).findViewById(R.id.nav_header_user_name)).setText(userName);
 		((TextView)navigationView.getHeaderView(0).findViewById(R.id.nav_header_user_email)).setText(userEmail);
+
+		ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+		if(sps.getBoolean(this.getString(R.string.pref_focus_github_key), true)) {
+			adapter.addFragment(GithubTrendFragment.newInstance(), getString(R.string.github));
+		}
+
+		adapter.addFragment(IdeasFragment.newInstance(), getString(R.string.ideas));
+		if(sps.getBoolean(this.getString(R.string.pref_focus_arxiv_key), true)) {
+			adapter.addFragment(ArxivFragment.newInstance(), getString(R.string.arxiv));
+		}
+		viewPager.setAdapter(adapter);
 	}
 
 	private void init() {
@@ -141,7 +148,8 @@ public class MainActivity extends AppCompatActivity
 				ActivityUtil.to(MainActivity.this, AboutActivity.class);
 				break;
 			case R.id.nav_share:
-
+				Snackbar.make(viewPager, "这个功能还没写好呢", Snackbar.LENGTH_LONG)
+						.setAction("Action", null).show();
 				break;
 			case R.id.nav_feedback:
 				ActivityUtil.to(MainActivity.this, FeedbackActivity.class);

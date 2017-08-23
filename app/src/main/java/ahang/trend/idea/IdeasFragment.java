@@ -5,9 +5,14 @@ import android.support.v4.app.Fragment;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.EditText;
+import android.widget.TextView;
 
+import ahang.trd.util.SpUtil;
 import ahang.trend.R;
 import ahang.trend.hot.BaseFragment;
+
+import static ahang.trend.idea.Preference.IDEA_KEY;
 
 
 /**
@@ -19,6 +24,7 @@ import ahang.trend.hot.BaseFragment;
  * create an instance of this fragment.
  */
 public class IdeasFragment extends BaseFragment {
+	private TextView ideas;
 	public static IdeasFragment newInstance() {
 		IdeasFragment fragment = new IdeasFragment();
 		return fragment;
@@ -37,6 +43,7 @@ public class IdeasFragment extends BaseFragment {
 
 	@Override
 	protected void initDom() {
+		ideas = (TextView)getActivity().findViewById(R.id.idea);
 	}
 
 	@Override
@@ -50,5 +57,6 @@ public class IdeasFragment extends BaseFragment {
 
 	@Override
 	protected void bind() {
+		ideas.setText(SpUtil.getString(IDEA_KEY, getActivity()));
 	}
 }
